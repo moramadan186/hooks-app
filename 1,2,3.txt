@@ -1,0 +1,47 @@
+----useState  React Hooks Intro-------------------------------------------------------------------------
+- hooks : functions that let you hook into React features from function components . Their names always start with use 
+- before react hooks , we can't hook into react features in function component
+
+class component problems
+- nice to have functional component
+- require boiler blet code (many lines of code)
+- complex to read and reuse with big components 
+- solve problem of this keyword  
+
+
+hooks featurs 
+- completely opt in 
+- backword compitability
+- make function manage its own state 
+- clean and short code 
+
+- state vs props 
+
+🔴useState()
+to use it
+- import {useState} from 'react'
+- const [counter , setCounter]=useState(0);
+
+- imagination code of useState()
+function useState(intialValue){
+    let item = intialValue;
+    function setItem(val){
+        item=val;
+    }
+    return [item,setItem]
+}
+
+- internally , useState trigger the rerender instead in cc when changing the state
+
+
+
+
+
+
+
+
+
+
+
+
+

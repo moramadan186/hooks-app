@@ -3,14 +3,14 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      counter: 0
     }
-  }handleCount
-  handleCountUp=()=>{
-    this.setState({count:this.state.count+1})
+  } handleCount
+  handleCountUp = () => {
+    this.setState({ counter: this.state.counter + 1 })
   }
-  handleCountDown=()=>{
-    this.setState({count:this.state.count-1})
+  handleCountDown = () => {
+    this.setState({ counter: this.state.counter - 1 })
   }
 
   render() {
@@ -18,7 +18,7 @@ class App extends Component {
       <React.Fragment>
         <div className="container text-center">
           <button onClick={this.handleCountUp} className="my-4 btn btn-outline-success">Count Up</button>
-          <h1>{this.state.count}</h1>
+          <h1>{this.state.counter}</h1>
           <button onClick={this.handleCountDown} className="my-4 btn btn-outline-danger">Count Down</button>
         </div>
       </React.Fragment>
