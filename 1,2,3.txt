@@ -20,7 +20,10 @@ hooks featurs
 🔴useState()
 to use it
 - import {useState} from 'react'
-- const [counter , setCounter]=useState(0);
+- syntax:
+const [item , setItem] = useSate(intialValue) --> where it is return [item , setItem function]
+- ex:
+const [counter , setCounter]=useState(0);
 
 - imagination code of useState()
 function useState(intialValue){
@@ -30,8 +33,10 @@ function useState(intialValue){
     }
     return [item,setItem]
 }
-
 - internally , useState trigger the rerender instead in cc when changing the state
+- we can set value of outside the function instead as parameter
+counter = counter || 0 --> not recomended
+- hooks must defined in the function root , not in any block
 
 
 
